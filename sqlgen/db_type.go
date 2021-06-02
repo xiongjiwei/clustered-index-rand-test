@@ -86,7 +86,6 @@ func NewState() *State {
 	s.StoreConfig(ConfigKeyUnitLimitIndexKeyLength, struct{}{})
 	s.StoreConfig(ConfigKeyUnitAvoidDropPrimaryKey, struct{}{})
 	// s.AppendHook(NewFnHookTxnWrap(20))
-	s.AutoSeed()
 	return s
 }
 
